@@ -4,7 +4,7 @@ document.querySelector(".menu-btn").addEventListener("click", function () {     
         .querySelectorAll('*[class^="menu"]')                                  //select all classes that start with menu
         .forEach(item => item.classList.toggle("show"));                      //for each menu item, toggle it to show
         
-        let divBranding = document.querySelector(".portrait");               //find the branding div class portrait 
+        let divBranding = document.querySelector(".subMenu");               //find the branding div class portrait 
         divBranding.innerHTML = "";                                         //clear whatever was in the branding div
 })
 
