@@ -9,7 +9,7 @@ document.querySelector(".menu-btn").addEventListener("click", function () {     
 })
 
 document.addEventListener("DOMContentLoaded", function () {                 //listener for making the contact info populate in the branding div
-    let divBranding = document.querySelector(".portrait");                  //select the portrait class and sets it to the div variable
+    let divBranding = document.querySelector(".subMenu");                  //select the portrait class and sets it to the div variable
 
     document.querySelector(".contact").addEventListener("click", function () {      //listen for when the .contact class is clicked
         divBranding.innerHTML = "";                                                 //clear what was previously in the branding div               
