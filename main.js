@@ -2,9 +2,7 @@ document.querySelector(".menu-btn").addEventListener("click", function () {     
 
     document
         .querySelectorAll('*[class^="menu"]')                                  //select all classes that start with menu
-        .forEach(item = > item.classList.toggle("show")
-)
-    ;                      //for each menu item, toggle it to show
+        .forEach(item => item.classList.toggle("show"));                      //for each menu item, toggle it to show
 
     let divBranding = document.querySelector(".subMenu");               //find the branding div class portrait 
     divBranding.innerHTML = "";                                         //clear whatever was in the branding div
@@ -29,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {             //functi
         divBranding.innerHTML = "";                                             //clear whatever was previously in the branding div
         let divResume = document.createElement('div');                          //creates a new div for the resume                            
         divResume.id = "divResume";                                             //assigns id to div                   
-        divResume.innerHTML = "<iframe src=\"files/resume.pdf\"></iframe>" //innerHTML of new div sit to an Iframe containing the resume PDF, located in the dist/files folder
+        divResume.innerHTML = "<iframe src=\"files/resume.pdf\" width=\"825px\" height=\"900px\"></iframe>" //innerHTML of new div sit to an Iframe containing the resume PDF, located in the dist/files folder
         divBranding.appendChild(divResume);                             //add new div to branding div      
     })
 })
